@@ -8,4 +8,6 @@ node{
       def mvnHome = tool name: 'maven3', type: 'maven'
       sh "${mvnHome}/bin/mvn package" 
    }
+   stage ('BuildDockerImage'){
+      sh'docker build -t satheeshcharles/my-app:2.0 .'
 }
