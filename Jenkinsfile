@@ -10,4 +10,6 @@ node{
    }
    stage ('BuildDockerImage'){
       sh'docker build -t satheeshcharles/my-app:2.0 .'
+   }
 }
+
